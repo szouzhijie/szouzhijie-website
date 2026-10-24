@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>欧智捷 - 企业智能解决方案服务商</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Microsoft YaHei", sans-serif;
+        }
+        :root {
+            --main-blue: #0066bb;
+            --text-dark: #222;
+            --text-gray: #444;
+            --light-gray: #f5f7fa;
+        }
+        header {
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .header-wrap {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 14px 20px;
+        }
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .oz-logo {
+            width: 48px;
+            height: 48px;
+        }
+        .brand-name {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--main-blue);
+        }
+        nav ul {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+        }
+        nav a {
+            color: var(--text-dark);
+            text-decoration: none;
+            font-size: 16px;
+        }
+        nav a:hover {
+            color: var(--main-blue);
+        }
+        .tel-top {
+            color: var(--main-blue);
+            font-weight: 600;
+        }
+        .banner {
+            background: var(--light-gray);
+        }
+        .banner-wrap {
+            max-width: 1200px;
+            margin: 0 auto;
+            min-height: 420px;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+        }
+        .banner-text h1 {
+            font-size: 36px;
+            margin-bottom: 16px;
+            color: #111;
+        }
+        .banner-text p {
+            font-size: 18px;
+            color: #555;
+            max-width: 580px;
+            line-height: 1.8;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 28px;
+            color: var(--text-dark);
+            margin-bottom: 40px;
+            position: relative;
+        }
+        .section-title::after {
+            content: "";
+            width: 60px;
+            height: 3px;
+            background: var(--main-blue);
+            display: block;
+            margin: 12px auto 0;
+        }
+        .about-text {
+            line-height: 1.9;
+            font-size: 16px;
+            color: var(--text-gray);
+        }
+        .about-text p {
+            margin-bottom: 16px;
+        }
+        .bg-gray {
+            background: var(--light-gray);
+        }
+        .service-item {
+            margin-bottom: 24px;
+        }
+        .service-item h3 {
+            color: var(--main-blue);
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+        .service-item p {
+            color: #555;
+            line-height: 1.7;
+        }
+        .contact-info {
+            text-align: center;
+            line-height: 2.2;
+            font-size: 17px;
+        }
+        footer {
+            background: #222;
+            color: #aaa;
+            text-align: center;
+            padding: 28px 10px;
+            font-size: 14px;
+        }
+        @media(max-width:768px) {
+            nav ul {
+                gap:14px;
+                flex-wrap: wrap;
+            }
+            .banner-text h1 {
+                font-size:26px;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="header-wrap">
+        <div class="brand">
+            <svg class="oz-logo" viewBox="0 0 100 100" fill="#0066bb">
+                <path d="M 20 50 A 22 22 0 1 1 20 51" stroke="#0066bb" stroke-width="8" fill="none"/>
+                <path d="M40 30 L78 30 L42 70 L80 70" stroke="#0066bb" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <div class="brand-name">欧智捷</div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">首页</a></li>
+                <li><a href="#about">关于我们</a></li>
+                <li><a href="#business">核心业务</a></li>
+                <li><a href="#advantage">服务优势</a></li>
+                <li><a href="#contact">联系我们</a></li>
+            </ul>
+        </nav>
+        <div class="tel-top">客服热线：18665235350</div>
+    </div>
+</header>
+
+<section class="banner" id="home">
+    <div class="banner-wrap">
+        <div class="banner-text">
+            <h1>专注企业智能化整体解决方案</h1>
+            <p>欧智捷面向企事业单位提供软硬件咨询部署、运维售后与行业定制化方案，高效助力企业数字化升级。</p>
+        </div>
+    </div>
+</section>
+
+<section id="about">
+    <div class="container">
+        <h2 class="section-title">关于我们</h2>
+        <div class="about-text">
+            <p>欧智捷是国内专注企业数字化服务的科技公司，总部设立深圳，业务服务覆盖全国各大城市。</p>
+            <p>公司坚持一站式企业服务模式，为广大政企客户提供售前咨询、产品选型采购、实施部署、售后维保以及技术培训全套服务，同时面向不同行业输出定制化智能落地解决方案。</p>
+            <p>企业恪守“专业务实，用心服务”的经营理念，以真诚、热情、严谨的服务标准，已经成为众多大中型企业信赖的合作伙伴。欧智捷期待与各界伙伴携手，共创数字化新价值。</p>
+        </div>
+    </div>
+</section>
+
+<section class="bg-gray" id="business">
+    <div class="container">
+        <h2 class="section-title">核心业务</h2>
+        <div class="service-list">
+            <div class="service-item">
+                <h3>企业设备方案</h3>
+                <p>针对办公场景提供软硬件选型，面向团队规模输出适配的设备采购、批量部署方案，满足企业日常办公需求。</p>
+            </div>
+            <div class="service-item">
+                <h3>技术实施部署</h3>
+                <p>现场实施调试，环境配置、账号管理、设备联调，帮助企业快速完成整套系统落地，减少内部技术压力。</p>
+            </div>
+            <div class="service-item">
+                <h3>售后运维支持</h3>
+                <p>提供企业级售后，故障响应、硬件维保、远程支持，保障业务设备稳定运行，降低故障停工风险。</p>
+            </div>
+            <div class="service-item">
+                <h3>员工应用培训</h3>
+                <p>面向企业人员开展操作培训，帮助团队快速上手新系统、新设备，释放数字化工具的业务价值。</p>
+            </div>
+            <div class="service-item">
+                <h3>行业定制解决方案</h3>
+                <p>结合教育、零售、制造等行业业务特征，输出专属数字化方案，贴合业务流程，解决真实业务痛点。</p>
+            </div>
+            <div class="service-item">
+                <h3>咨询规划服务</h3>
+                <p>前期调研评估，输出数字化升级建议，协助企业做好预算规划，避免盲目投入。</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="advantage">
+    <div class="container">
+        <h2 class="section-title">我们的优势</h2>
+        <div class="service-list">
+            <div class="service-item">
+                <h3>全国服务网络</h3>
+                <p>多地区分支机构支撑，线上线下结合，可快速响应全国各地企业客户需求。</p>
+            </div>
+            <div class="service-item">
+                <h3>一站式闭环服务</h3>
+                <p>咨询-选型-部署-培训-售后全链路，客户不用对接多家供应商，降低沟通成本。</p>
+            </div>
+            <div class="service-item">
+                <h3>企业项目经验</h3>
+                <p>服务大量政企项目，熟悉不同行业的办公与业务场景，方案落地能力成熟可靠。</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-gray" id="contact">
+    <div class="container">
+        <h2 class="section-title">联系我们</h2>
+        <div class="contact-info">
+            <p>客服热线：18665235350</p>
+            <p>服务邮箱：support@szouzhijie.cn</p>
+            <p>总部地址：广东.深圳</p>
+            <p>欢迎各企事业单位来电咨询合作</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>©2026 欧智捷 版权所有 | 企业智能解决方案服务商</p>
+</footer>
+</body>
+</html>
